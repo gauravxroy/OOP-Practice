@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="bank-header">
+        <h1 class="bank-title">Banking System</h1>
+    </header>
+
+    <main class="bank-container">
+        <!-- User Login Section -->
+        <section id="login-section" class="login-section">
+            <h2>Login</h2>
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="account-number">Account Number</label>
+                    <input type="text" id="account-number" class="form-input" placeholder="Enter your account number"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-input" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </section>
+
+        <!-- Account Information Section -->
+        <section id="account-section" class="account-section hidden">
+            <h2>Account Overview</h2>
+            <div class="account-info">
+                <p><strong>Account Holder:</strong> <span id="account-holder">John Doe</span></p>
+                <p><strong>Account Number:</strong> <span id="account-number"></span></p>
+                <p><strong>Account Balance:</strong> <span id="account-balance">$0.00</span></p>
+            </div>
+        </section>
+
+        <!-- Transaction Section -->
+        <section id="transaction-section" class="transaction-section hidden">
+            <h2>Transactions</h2>
+            <form id="transaction-form" class="transaction-form">
+                <div class="form-group">
+                    <label for="transaction-type">Transaction Type</label>
+                    <select id="transaction-type" class="form-input" required>
+                        <option value="deposit">Deposit</option>
+                        <option value="withdraw">Withdraw</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" class="form-input" placeholder="Enter amount" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bank-footer">
+        <p>&copy; 2024 Banking System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>

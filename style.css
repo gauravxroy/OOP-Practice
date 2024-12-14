@@ -1,0 +1,137 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+    /* Hide sections until needed */
+}
+
+/* Header Styles */
+.bank-header {
+    background-color: #0047ab;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bank-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Main Container */
+.bank-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #0047ab;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f9f9f9;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #0047ab;
+    box-shadow: 0px 0px 5px rgba(0, 71, 171, 0.3);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #0047ab;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #003580;
+}
+
+/* Account Information */
+.account-info {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    height: 50vh;
+}
+
+
+
+.account-info p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.bank-footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #0047ab;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.bank-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.hidden {
+    display: none;
+}
