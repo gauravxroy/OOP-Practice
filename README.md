@@ -46,7 +46,7 @@ The app ensures that sensitive data, like the account balance, is securely encap
    - **Benefits**:
      - Reduces complexity for users.
      - Makes code more flexible to changes.
-
+     - hides internal working
    **Example**:
    ```javascript
    class Car {
