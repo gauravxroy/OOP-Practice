@@ -1,5 +1,6 @@
 const password = "1234@abc";
 class BankAccount {
+  // private instance varible // object level varible
   #balance = 0.0;
   #password = password;
 
@@ -17,12 +18,14 @@ class BankAccount {
     if (amount <= this.#balance && amount >= 100) {
       this.#balance -= amount;
       return this.#balance;
+    } else {
+      throw new Error("Insufficient Balance");
     }
   }
   sendMoney() {}
 }
 
-const account = new BankAccount();
+const account = new BankAccount(); //object for BankAccount
 const balance = document.querySelector("#account-balance");
 const form = document.querySelector("#transaction-form");
 const amount = document.querySelector("#amount");
@@ -40,7 +43,11 @@ form.addEventListener("submit", (e) => {
   if (transaction.value === "deposit") {
     account.depositeBalance(amountRs);
   } else {
-    account.withdrawBalance(amountRs);
+    try {
+      account.withdrawBalance(amountRs);
+    } catch (err) {
+      console.error(err.message);
+    }
   }
 
   balance.innerHTML = `$${account.getBalance()}`;
